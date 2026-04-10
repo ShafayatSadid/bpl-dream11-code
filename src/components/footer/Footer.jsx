@@ -7,7 +7,7 @@ const Footer = () => {
             <div className='max-w-330 mx-auto'>
                 <img className='mx-auto pt-7 w-35' src={footerLogo} alt="Footer Logo" />
 
-                <div className='flex gap-44 items-center justify-center mt-16'>
+                <div className='flex flex-wrap gap-44 items-center justify-center mt-16'>
                     <div>
                         <h2 className='text-[1.125rem] font-semibold'>About Us</h2>
                         <p className='max-w-72 text-[1rem] font-normal text-[#ffffff]/60 mt-4'>We are a passionate team dedicated to providing the best services to our customers.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div>
+                    <div className='hidden'>
                         <h2 className='text-[1.125rem] font-semibold'>Subscribe</h2>
                         <p className='mb-6 max-w-72 text-[1rem] font-normal text-[#ffffff]/60 mt-4'>Subscribe to our newsletter for the latest updates.</p>
 

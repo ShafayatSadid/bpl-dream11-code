@@ -12,15 +12,15 @@ const Players = ({ playersPromise, setCoin, coin }) => {
     const [selectedPlayers, setSelectedPlayers] = useState([]);
 
     return (
-        <div className='max-w-330 mx-auto my-21.75'>
+        <div className='max-w-330 mx-auto my-21.75 px-2'>
 
             {/* Players Header */}
-            <div className='flex justify-between items-center'>
+            <div className='flex flex-wrap gap-2 justify-between items-center'>
                 {
-                    selected === "available" ? <h3 className='text-2xl font-bold'>Available Players</h3> : <h3 className='text-2xl font-bold'>Selected Players ({selectedPlayers.length}/{players.length})</h3>
+                    selected === "available" ? <h3 className='text-[1rem] md:text-[1.5rem] font-semibold md:font-bold'>Available Players</h3> : <h3 className='text-[1rem] md:text-[1.5rem] font-semibold md:font-bold'>Selected Players ({selectedPlayers.length}/{players.length})</h3>
                 }
 
-                <div className='flex gap-1.5'>
+                <div className='flex flex-wrap gap-1.5'>
                     <button onClick={() => setSelected("available")} className={selected === "available" ? 'btn btn-primary' : 'btn'}>Available</button>
 
                     <button onClick={() => setSelected("selected")} className={selected === "selected" ? 'btn btn-primary' : 'btn'}>Selected ({selectedPlayers.length})</button>
